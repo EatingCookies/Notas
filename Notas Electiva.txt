@@ -1,0 +1,87 @@
+Descargar node y angular
+nodejs	--> LTS
+angular cli
+
+instalar angular por cmd
+npm install -g @angular/cli
+
+para instalar bootstrap, jquery y popper
+npm i bootstrap jquery popper.js --save
+
+en angular.json
+"styles": [
+              "src/styles.scss",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+"scripts": [
+              "./node_modules/jquery/dist/jquery.slim.js",
+              "./node_modules/popper.js/dist/umd/popper.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+
+para crear un nuevo proyecto
+ng new my-first-project	YES	SCSS
+
+para correr el proyecto 	http://localhost:4200/
+ng serve
+
+para refrescar angular
+nmp i
+
+para crear un componente
+ng g c core/components/header
+
+para crear una clase
+ng g class "nombre_de_la_clase"
+ng g class core/components/estructura/Usuario
+
+
+ng g service core/service/consumidor
+
+Instalar jest, jest es un framework creado por facebook para facilitar las para facilitar la ejecucion de pruebas unitarias
+ng add @briebug/jest-schematic
+
+DDD
+	TNN
+	ENTIDADES	ORM
+	DTO
+	BO
+
+
+DDD 
+	TDD Primero las pruebas y luego el desarrollo
+		
+
+
+
+git init
+git add .
+git commit -m "se agrega el proyecto"
+git branch -M main
+git remote add origin https://github.com/EatingCookies/0404.git
+git push -u origin main
+
+
+// DDD: Domain driven desing -> desarrollo orientado al dominio
+// TDD: Test Driven Develop (desing)-> Desarrollo guiado por pruebas
+// DTO: Data transfer Object -> se usa para transferir datos entre aplicaciones o capas (Modelo)
+// Entity: Representación de una tabla de base de datos en la aplicacion (Este no aplica pero es bueno tenerlo en cuenta)
+// Angular es un framework de node js , por ende corre sobre su plataforma, que es el motor V8de google
+// importante "npm" es el sistema de gestión de paquetes por defecto para Node.js (es el repositorio mas grande de librerias de la actualdad)
+// Angular Cli : La CLI de Angular es una herramienta de interfaz de línea de comandos que se utiliza para inicializar, desarrollar, andamiar y mantener aplicaciones de Angular directamente desde un shell (consola) de comandos.
+// export: La declaración export se utiliza al crear módulos de JavaScript para exportar funciones, objetos o tipos de datos primitivos del módulo para que puedan ser utilizados por otros programas con la sentencia import 
+// Angular Router: Permite el direccionamiento entre componentes de angular (usa el modulo routerModule)
+// appModule: es el corazon de la aplicacion, alli se encuentran las confiugraciones y la importacion de todos los modulos y componentes que se van a utilizar en el proyecto a mivel global
+// databinding: permite la comunicacion, y actualizacion (observer) de objetos entte el controller (ts) y la parte visual (html) de los componentes (comunmente)
+// bootstrap: es un framework de manejo de styles css
+// jest: framework que permite realizar las pruebas unitarias para angular (por defecto angular maneja karma)
+
+
+
+
+
+
+
+
+
+
